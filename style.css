@@ -41,8 +41,8 @@ body {
     flex-grow: 1
 }
 
-.task-row-wrapper__task-row-wrapper {
-    display: flex;
+.add-item-section__task-row-wrapper {
+  margin-top: 15px;
 }
 
 ul {
