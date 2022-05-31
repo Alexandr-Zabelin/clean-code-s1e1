@@ -5,6 +5,15 @@ body {
     font-family: Lato, sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+input, button{
+  outline: none;
+}
+
 .header {
     width: 500px;
     margin: 0 auto;
@@ -38,20 +47,11 @@ body {
 .task-row-wrapper__task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .add-item-section__task-row-wrapper {
   margin-top: 15px;
-}
-
-ul {
-    margin: 0;
-    padding: 0px;
-}
-
-input,button{
-    outline: none;
 }
 
 .button {
@@ -70,7 +70,7 @@ input,button{
 
 /* Heading */
 
-.section__heading {
+.section-heading {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -99,7 +99,7 @@ input,button{
 
 /* New Task */
 
-label[for="new-task"] {
+.section-heading__new-task-label {
     display: block;
     margin: 0;
 }
@@ -110,7 +110,7 @@ label[for="new-task"] {
 
 /* Task list */
 
-.task-list li {
+.task-list__item{
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -153,13 +153,13 @@ label[for="new-task"] {
 
 /* Edit Task */
 
-li .task-input {
+.task-list__item .task-input {
     display: none;
 }
 
 .edit-mode .task-input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .edit-mode .task-label {
